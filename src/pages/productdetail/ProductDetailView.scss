@@ -1,0 +1,102 @@
+// Warna dan variabel untuk konsistensi
+$primary-color: #3b82f6; // Biru
+$secondary-color: #2563eb; // Biru lebih gelap
+$text-color: #374151; // Abu-abu gelap
+$bg-color: #f9fafb; // Abu-abu sangat terang
+$border-color: #e5e7eb; // Batas abu-abu
+
+// Warna Kustom
+$accent-color: #f59e0b; // Kuning
+$danger-color: #ef4444; // Merah
+$success-color: #10b981; // Hijau
+$info-color: #3b82f6; // Biru informasi
+$warning-color: #f97316; // Oranye
+
+// Gaya utama untuk tampilan produk
+.product-detail-container {
+  background-color: $bg-color;
+  border-radius: 16px; // Sudut yang lebih halus
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Bayangan lembut
+  padding: 1.5rem; // Padding yang lebih baik
+  transition: transform 0.3s ease; // Transisi untuk transformasi kontainer
+}
+
+// Efek hover pada kontainer
+.product-detail-container:hover {
+  transform: scale(1.02); // Zoom sedikit pada hover
+}
+
+// Judul produk
+.product-detail-title {
+  color: $text-color; // Warna teks judul
+  font-weight: bold; // Menebalkan judul
+  font-size: 2rem; // Ukuran font
+  margin-bottom: 0.5rem; // Jarak bawah
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); // Bayangan pada teks judul
+  transition: color 0.3s ease; // Transisi warna
+}
+
+// Gaya saat hover pada judul
+.product-detail-title:hover {
+  color: $secondary-color; // Ganti warna saat hover
+}
+
+// Deskripsi produk
+.product-detail-description {
+  line-height: 1.6; // Jarak antar baris yang lebih baik
+  color: #4b5563; // Warna abu-abu lebih terang untuk deskripsi
+  margin-bottom: 1rem; // Jarak bawah
+}
+
+// Gaya untuk tombol harga
+.product-price-button {
+  transition: background-color 0.3s ease, transform 0.3s ease; // Transisi halus pada hover
+  display: inline-block;
+  padding: 0.75rem 1.5rem; // Padding untuk tombol
+  border-radius: 0.375rem; // Sudut tombol
+  background-color: $primary-color; // Warna tombol
+  color: white; // Warna teks tombol
+  text-decoration: none; // Menghilangkan garis bawah
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Bayangan pada tombol
+}
+
+// Gaya untuk tombol saat hover
+.product-price-button:hover {
+  background-color: $secondary-color; // Ganti warna saat hover
+  transform: translateY(-2px); // Mengangkat tombol sedikit saat hover
+}
+
+// Gaya untuk gambar
+.product-detail-image {
+  border-radius: 12px; // Sudut melengkung pada gambar
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Bayangan pada gambar
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Transisi halus pada gambar
+}
+
+// Gaya gambar saat hover
+.product-detail-image:hover {
+  transform: scale(1.05); // Zoom sedikit pada hover
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Bayangan lebih dalam saat hover
+}
+
+// Media queries untuk responsivitas
+@media (max-width: 768px) {
+  .product-detail-container {
+    padding: 1rem; // Mengurangi padding di layar kecil
+  }
+
+  .product-detail-title {
+    font-size: 1.5rem; // Ukuran font lebih kecil di layar kecil
+  }
+
+  .product-detail-image {
+    width: 100%; // Membuat gambar responsif
+    height: auto; // Memastikan proporsi tetap terjaga
+  }
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row; // Memastikan elemen dalam baris di layar lebih besar
+  }
+}
