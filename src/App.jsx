@@ -53,7 +53,7 @@ function App() {
       <ThemeContext.Provider value={theme}>
         <Navbar />
         <Routes>
-          <Route path="/beranda" element={<Beranda />} />
+          <Route path="/" element={<Beranda />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/produk" element={<Product />} />
