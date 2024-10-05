@@ -12,13 +12,13 @@ $transition-ease: 0.3s ease-in-out;
 // Styling for product view only
 .product-view { 
 
-  // Grid Styling
+  //Grid Styling
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px; // Increased gap for more space between cards
     padding: 30px;
-    background: linear-gradient(135deg, #f7a399 0%, #f38375 100%);
+    background: linear-gradient(135deg, #f7a399 0%, #f38375 100%) dark;
     border-radius: 16px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;

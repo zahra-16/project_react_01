@@ -23,7 +23,7 @@ export default function Detail() {
     //   <img src={resto?.thumbnail} alt="" />
     //   <h1>{resto?.restaurant.name }</h1>
     // </div>
-    <div className="hero bg-base-200 min-h-screen  bg-red-50">
+    <div className="hero bg-base-200 min-h-screen  bg-red-50 dark:bg-slate-800 dark:text-white">
       <div className="hero-content text-center space-y-8 flex-col">
         <img
           src={`https://restaurant-api.dicoding.dev/images/large/${resto?.restaurant.pictureId}`}
@@ -34,7 +34,7 @@ export default function Detail() {
           <p className="py-6 max-w-[50rem] text-justify">
             {resto?.restaurant?.description}
           </p>
-          <button className="btn btn-primary">Visit</button>
+          <button className="btn btn-primary dark:btn-dark">Visit</button>
         </div>
       </div>
     </div>

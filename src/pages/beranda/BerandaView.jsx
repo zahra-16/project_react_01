@@ -25,7 +25,7 @@ const BerandaView = ({ ubahCari, cariResto, hasilCari, hasilFilter }) => {
             </div>
           </div> */}
 
-      <div className="grid justify-items-stretch pt-12 bg-red-50">
+      <div className="grid justify-items-stretch pt-12 bg-red-50 dark:bg-slate-800">
         <label className="input input-bordered flex items-center gap-2 justify-self-center w-[500px]">
           <input
             type="text"
@@ -54,11 +54,11 @@ const BerandaView = ({ ubahCari, cariResto, hasilCari, hasilFilter }) => {
         </div> */}
       </div>
 
-      <div className="flex justify-center pt-12 bg-red-50">
+      <div className="flex justify-center pt-12 bg-red-50 dark:bg-slate-800">
         <div className="grid grid-cols-3 gap-12 pb-12 ">
           {hasilFilter?.restaurants?.map((data) => (
             <div
-              className="card card-compact bg-base-100 w-96 shadow-xl dark:bg-rose-900 dark:text-white"
+              className="card card-compact bg-base-100 w-96 shadow-xl dark:bg-black dark:text-white"
               key={data?.name}
             >
               <figure>
@@ -73,7 +73,7 @@ const BerandaView = ({ ubahCari, cariResto, hasilCari, hasilFilter }) => {
                 <div className="card-actions justify-end">
                   <Link
                     to={"/detail/" + data.id}
-                    className="btn bg-red-300 text-white"
+                    className="btn bg-red-300 text-white dark:bg-slate-600"
                   >
                     Show
                   </Link>
@@ -83,6 +83,7 @@ const BerandaView = ({ ubahCari, cariResto, hasilCari, hasilFilter }) => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };

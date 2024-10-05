@@ -5,13 +5,13 @@
   export default function ProductView({ products }) {
     try {
       return (
-        <div className="product-view"> 
+        <div className="product-view dark:bg-slate-800"> 
         <div className="flex-col py-24">
           <div className="pb-24 title-text">
-            <h2 className="text-3xl text-center">Produk</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center dark:text-white ">Produk</h2>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-8  dark:bg-black">
               {products?.map((product, index) => (
                 <Link key={index} to={`/produk/${product.id}`}>
                   <CardProduct

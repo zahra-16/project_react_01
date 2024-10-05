@@ -24,14 +24,14 @@ export default function Detail() {
     //   <img src={resto?.thumbnail} alt="" />
     //   <h1>{resto?.restaurant.name }</h1>
     // </div>
-    <div className="hero bg-base-200 min-h-screen  bg-red-50">
+    <div className="hero bg-base-200 min-h-screen  bg-red-50 dark:bg-slate-800">
       <div className="hero-content text-center space-y-8 flex-col">
         <img src={negara?.flag} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
-          <h1 className="text-5xl font-bold">{negara?.name}</h1>
-          <p className="pt-8 max-w-[50rem] text-center">{negara?.currency}</p>
-          <p className="pb-5 max-w-[50rem] text-center">{negara?.population}</p>
-          <Link to="/negara" className="btn  bg-red-400 text-white">
+          <h1 className="text-5xl font-bold dark:text-white">{negara?.name}</h1>
+          <p className="pt-8 max-w-[50rem] text-center dark:text-white">{negara?.currency}</p>
+          <p className="pb-5 max-w-[50rem] text-center dark:text-white">{negara?.population}</p>
+          <Link to="/negara" className="btn  bg-red-400 text-white dark:bg-slate-800">
             Back
           </Link>
         </div>
